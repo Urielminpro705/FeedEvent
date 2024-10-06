@@ -133,6 +133,7 @@ main {
 .cont-filters-activated {
     height: 400px;
     background-color: var(--terciario);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.075);
 }
 
 .cont-filters-content {
