@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/prefix.css">
     <link rel="stylesheet" href="CSS/busqueda.css">
-    <title>Document</title>
+    <title>FeedEvent - Inicio</title>
 </head>
 <body>
     <main>
+        <nav>
+
+        </nav>
         <article class="cont-search-bar">
             <div class="search-bar">
-                <div class="search-input"></div>
-                <button class="filter-btn"></button>
+                <div class="cont-search-input">
+                    <button class="search-btn btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" id="search-input" placeholder="Buscar">
+                </div>
+                <button class="filter-btn btn">
+                    <i class="fa-solid fa-filter"></i>
+                </button>
             </div>
         </article>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/busqueda.js"></script>
+    <script src="https://kit.fontawesome.com/5049a1cee4.js" crossorigin="anonymous"></script>
 </body>
 </html>
