@@ -18,6 +18,10 @@ nav {
 
 main {
     margin-top: 130px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .cont-search-bar {
@@ -26,6 +30,7 @@ main {
     display: flex;
     justify-content: space-between;
     position: relative;
+    z-index: 10;
 }
 
 .cont-search-input {
@@ -92,10 +97,6 @@ main {
     transition: 0.2s;
 }
 
-.cont-search-input::after {
-    content: "";
-}
-
 .filter-btn-activated {
     border-radius: 0 23px 0 0px;
     min-width: 55px;
@@ -143,4 +144,82 @@ main {
 
 .cont-filters-activated .cont-filters-content {
     display: flex;
+}
+
+.cont-filters-on {
+    width: 600px;
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.filter-card {
+    padding-left: 10px;
+    width: auto;
+    gap: 5px;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: var(--primario);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.filter-x-btn i {
+    font-size: 0.7rem;
+}
+
+.filter-x-btn {
+    border: none;
+    padding: 0;
+    height: 100%;
+    width: 25px;
+    background-color: transparent;
+    color: var(--primario);
+}
+
+.filter-x-btn:hover {
+    background-color: var(--hover_trans);
+}
+
+#filter1 {
+    background-color: var(--tag1);
+}
+
+#filter2 {
+    background-color: var(--tag2);
+}
+
+#filter3 {
+    background-color: var(--tag3);
+}
+
+.cont-publicaciones {
+    width: 90%;
+    height: 500px;
+    background-color: red;
+}
+
+.titulos {
+    width: 90%;
+    margin-top: 20px;
+    color: var(--secundario);
+}
+
+.titulos p {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.titulos p:first-of-type {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
