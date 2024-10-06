@@ -122,9 +122,25 @@ main {
     border-radius: 23px;
     position: absolute;
     transition: 0.3s;
+    padding-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
 }
 
 .cont-filters-activated {
     height: 400px;
     background-color: var(--terciario);
+}
+
+.cont-filters-content {
+    display: none;
+    width: 90%;
+    height: 100%;
+    background-color: red;
+}
+
+.cont-filters-activated .cont-filters-content {
+    display: flex;
 }

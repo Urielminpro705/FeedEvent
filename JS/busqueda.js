@@ -9,7 +9,7 @@ $(document).ready(function() {
                 $(".cont-search-input").removeClass("cont-search-input-activated")
                 $("#filter-btn-x-icon").css("display","none")
                 $("#filter-btn-filter-icon").css("display","block")
-            },100)
+            },200)
             $(".cont-filters").removeClass("cont-filters-activated")
             isOpenPanelFilter = false
         } else {
