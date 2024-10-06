@@ -9,7 +9,7 @@ body {
 nav {
     width: 100%;
     position: absolute;
-    height: 100px;
+    height: 80px;
     background-color: var(--primario);
     top: 0;
     left: 0;
@@ -25,7 +25,6 @@ main {
     width: 600px;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
 }
 
 .cont-search-input {
@@ -39,6 +38,7 @@ main {
     overflow: hidden;
     border: transparent 2px solid;
     box-sizing: border-box;
+    transition: 0.2s;
 }
 
 #search-input {
@@ -64,6 +64,7 @@ main {
     color: var(--secundario);
     font-size: 1rem;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .btn:hover {
@@ -86,8 +87,28 @@ main {
     background-color: var(--terciario);
     color: var(--secundario);
     cursor: pointer;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.cont-search-input::after {
+    content: "";
 }
 
 .filter-btn-activated {
     border-radius: 0 50px 50px 0px;
+    min-width: 55px;
+    margin: 0;
+}
+
+.cont-search-input-activated {
+    border-radius: 50px 0 0 50px;
+}
+
+#filter-btn-x-icon {
+    display: none;
+}
+
+#filter-btn-filter-icon {
+    display: block;
 }
